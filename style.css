@@ -129,10 +129,16 @@ a {
  **********************************************************************/
 .blue{
     /*grid-column:1/-1;   */ 
-    display: flex;  
+    padding: 10px;
+    display: grid;  
+    grid-template-columns: repeat(auto-fill ,minmax(350px,1fr));
+    grid-gap: 20px;
+    justify-content: center;
+   /*
     flex-flow: row wrap;
     justify-content: center;
     align-content: center;
+    */
    /* grid-template-columns: repeat(auto-fill, 200px);
     justify-content: space-between;*/
     background: #7abcff; /* Old browsers */
@@ -146,12 +152,14 @@ a {
 
 
 .pgridcell {
-    /*flex: 1 100%;*/     
-    margin: 10px;
+    /*flex: 1 100%;*/         
+   justify-self: center;
     width: 250px;
     height: 250px;   
+    /*
     text-align:center;
     align-self: center;
+    */
     background-color: #36454f;  
     background-repeat: no-repeat;
     background-size: 50%;  
