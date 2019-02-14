@@ -72,7 +72,7 @@ a {
 
 
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 400px) {
         .main-nav {
         flex-direction: column;
         }
